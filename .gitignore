@@ -1,0 +1,15 @@
+# Visual Studio Code
+.vscode/settings.json
+
+# Python-generated files
+__pycache__
+*.pyc
+
+# Virtualenv
+.virtualenv
+
+# Environment variable
+.env
+
+# Database
+ayano.db
