@@ -1,12 +1,17 @@
 import os
 
-config = dict()
-
 keys = [
     "client_id",
     "client_secret",
     "token"
 ]
 
-for key in keys:
-    config[key] = os.getenv(key)
+
+class Config():
+    def __init__(self):
+        for key in keys:
+            setattr(self, key, os.getenv(key.upper()))
+
+
+def make_config():
+    return Config()

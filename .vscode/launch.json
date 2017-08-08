@@ -1,5 +1,5 @@
 {
-    "version": "0.2.0",
+    "version": "2.0.0",
     "configurations": [
         {
             "name": "Bot",
@@ -8,7 +8,7 @@
             "pythonPath": "${config:python.pythonPath}",
             "program": "${workspaceRoot}/main.py",
             "cwd": "${workspaceRoot}",
-            "envFile": ".env",
+            "envFile": "${workspaceRoot}/.env",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
